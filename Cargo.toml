@@ -3,7 +3,7 @@ name = "gitversion"
 description = "Semantic Versioning for Git projects"
 version = "0.0.2"
 
-keywords = ["git", "version", "semver", "versioning"]
+keywords = ["git", "version", "semver", "semantic", "versioning"]
 categories = ["command-line-utilities", "development-tools"]
 authors = ["Omid Rad <omidmr@gmail.com>"]
 repository = "https://github.com/omid/gitversion"

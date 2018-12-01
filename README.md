@@ -7,13 +7,16 @@ Semantic Versioning for Git projects
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [mit-url]: LICENSE-MIT
 
-### Installation
+## Usage
+#### Docker
+_Note: change **DIR** to the Git project dir._
 ```bash
-cargo install gitversion 
+docker run -v DIR:/repo omidmr/gitversion gitversion --help
 ```
 
-### Usage
+#### Manual
 ```bash
+cargo install gitversion
 gitversion --help
 ```
 
