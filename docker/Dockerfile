@@ -1,11 +1,16 @@
-FROM rust:1-slim
+FROM rust:1 as builder
+
+RUN cargo install gitversion
+
+###
+
+FROM debian:stable-slim
 
 RUN apt-get update\
-    && apt-get install -y pkg-config --no-install-recommends\
-    && apt-get install -y libssl-dev --no-install-recommends\
+    && apt-get install -y libssl-dev libcurl4-openssl-dev --no-install-recommends\
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /repo
 WORKDIR /repo
 
-RUN cargo install gitversion
+COPY --from=builder /usr/local/cargo/bin/gitversion /usr/bin/gitversion
