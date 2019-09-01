@@ -21,7 +21,6 @@ fn main() {
     Err(e) => panic!("failed to open: {}", e),
   };
 
-//  git_fetch(&repo).unwrap();
   let all_tags = git_tag(&repo).unwrap();
 
   // filter by a specific regexp
@@ -66,14 +65,6 @@ fn main() {
 
   println!("{}{}", version_prefix, version.to_string());
 }
-
-//fn git_fetch(repo: &git2::Repository) -> Result<(), git2::Error> {
-//  repo.find_remote("origin")?.fetch(&["master"], None, None)
-//}
-
-//fn git_checkout(repo: &git2::Repository) -> Result<(), git2::Error> {
-//  repo.set_head("master")
-//}
 
 fn git_tag(repo: &git2::Repository) -> Result<StringArray, git2::Error> {
   repo.tag_names(None)

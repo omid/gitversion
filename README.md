@@ -2,7 +2,9 @@
 
 [![MIT licensed][mit-badge]][mit-url]
 
-Semantic Versioning for Git projects
+#### Basic Semantic Versioning for Git projects
+
+The download size of the docker image is only about *30MB* and the actual size of the docker image is only around *80MB*.
 
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [mit-url]: LICENSE-MIT
