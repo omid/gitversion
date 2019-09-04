@@ -3,3 +3,6 @@ build_docker:
 
 push_docker:
 	docker push omidmr/gitversion
+
+cargo_publish:
+	cargo publish
