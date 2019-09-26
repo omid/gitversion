@@ -24,6 +24,16 @@ mod tests {
   }
 
   #[test]
+  fn generated_version_none() {
+    let prefix = String::from("v");
+    let dir = String::from(".");
+
+    let mut gitversion = GitVersion::new(dir, prefix);
+
+    assert_eq!(gitversion.next_version(String::from("none")), "v0.0.0");
+  }
+
+  #[test]
   fn generated_version_patch() {
     let prefix = String::from("v");
     let dir = String::from(".");

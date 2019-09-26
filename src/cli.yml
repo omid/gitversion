@@ -17,6 +17,7 @@ args:
         - major
         - minor
         - patch
+        - none
       default_value: patch
   - prefix:
       short: p

@@ -52,15 +52,10 @@ impl GitVersion {
     let mut version = Version::parse(self.current_version().as_str()).unwrap();
 
     match _type.as_str() {
-      "major" => {
-        version.increment_major();
-      }
-      "minor" => {
-        version.increment_minor();
-      }
-      "patch" => {
-        version.increment_patch();
-      }
+      "major" => version.increment_major(),
+      "minor" => version.increment_minor(),
+      "patch" => version.increment_patch(),
+      "none" => (),
       _ => unreachable!()
     }
 
