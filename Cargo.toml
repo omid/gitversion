@@ -1,7 +1,7 @@
 [package]
 name = "gitversion"
 description = "Semantic Versioning for Git projects"
-version = "0.0.3"
+version = "0.0.4"
 
 keywords = ["git", "version", "semver", "semantic", "versioning"]
 categories = ["command-line-utilities", "development-tools"]

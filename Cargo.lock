@@ -90,7 +90,7 @@ dependencies = [
 
 [[package]]
 name = "gitversion"
-version = "0.0.3"
+version = "0.0.4"
 dependencies = [
  "clap 2.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "git2 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
