@@ -1,5 +1,5 @@
 name: gitversion
-version: "0.0.2"
+version: "0.1.0"
 author: "Omid Rad <omidmr@gmail.com>"
 about: Try to guess the next semver of a Git source repo
 args:
