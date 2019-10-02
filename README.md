@@ -4,7 +4,7 @@
 
 #### Basic Semantic Versioning for Git projects
 
-The download size of the docker image is only about *30MB* and the actual size of the docker image is only around *80MB*.
+The download size of the docker image is only about *10MB* and the actual size of the docker image is only around *20MB*.
 
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [mit-url]: LICENSE-MIT
