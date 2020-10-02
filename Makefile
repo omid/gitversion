@@ -1,5 +1,5 @@
 build_docker:
-	docker build --no-cache -t omidmr/gitversion docker
+	docker build -f docker/Dockerfile --pull -t omidmr/gitversion .
 
 push_docker:
 	docker push omidmr/gitversion
