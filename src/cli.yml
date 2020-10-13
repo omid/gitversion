@@ -1,35 +1,42 @@
 name: gitversion
-version: "0.1.1"
+version: "0.2.0"
 author: "Omid Rad <omidmr@gmail.com>"
 about: Try to guess the next semver of a Git source repo
 args:
-#  - branch:
-#      short: b
-#      long: branch
-#      help: "Which branch would you like to version"
-#      takes_value: true
-#      default_value: master
-  - type:
-      short: t
-      long: type
-      help: "How important is this release?"
-      possible_values:
-        - major
-        - minor
-        - patch
-        - none
-      default_value: patch
-  - prefix:
-      short: p
-      long: prefix
-      help: "Prefix for versioning, like 'v' for 'v1.0.0'"
-      default_value: ""
-  - directory:
-      short: d
-      long: directory
-      help: "Directory of the Git working tree"
-      default_value: "."
-#  - verbose:
-#      short: v
-#      multiple: true
-#      help: Sets the level of verbosity
+#- branch:
+#    short: b
+#    long: branch
+#    help: "Which branch would you like to version"
+#    takes_value: true
+#    default_value: master
+- type:
+    short: t
+    long: type
+    help: "How important is this release?"
+    possible_values:
+    - major
+    - minor
+    - patch
+    default_value: patch
+- format:
+    short: f
+    long: format
+    help: "The way to version the package. If you choose \"sequential\", \"type\" will be ignored."
+    possible_values:
+    - semver
+    - sequential
+    default_value: semver
+- prefix:
+    short: p
+    long: prefix
+    help: "Prefix for versioning, like 'v' for 'v1.0.0'"
+    default_value: ""
+- directory:
+    short: d
+    long: directory
+    help: "Directory of the Git working tree"
+    default_value: "."
+#- verbose:
+#    short: v
+#    multiple: true
+#    help: Sets the level of verbosity
